@@ -1,0 +1,71 @@
+<!DOCtype HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+		<title>El juego del ahorcado</title>
+		<link rel="stylesheet" type="text/css"  href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<body style="background:rgba(243,245,252,1);">
+        <header>
+            <img src="images/Logo.png" id="hlogo" />
+        </header>
+
+        <main>
+			<h1 id="nombre"></h1>
+           <img src="" id="dibujo"/>
+			<section class="title">
+                <button class="actionButton" id="startButton">Iniciar juego</button>
+                <button class="actionButton" id="addWordButton">Agregar nueva palabra</button>
+			</section>
+			<section class="addWord">
+				<input type="text" maxlength="8" class="newWord" placeholder="Ingrese una palabra">
+				<div class="advertencia">
+					<img src="images/vector.png" id="vector"/>						
+					<h6 class= aviso> Máx. de 8 letras </h6>
+				</div>						
+				<div class="botoneraAdd">	
+						<button class="leftButton" id="saveButton"> Guardar y empezar </button>
+						<button class="rightButton" id="cancelButton"> Cancelar </button>						
+				</div>
+			</section>
+			<section class="game">
+				<div class="draw">
+					<img class="ahorcado" src="images/ahorcado/piso.svg" id="piso"/>
+					<img class="ahorcado" src="images/ahorcado/asta.svg" id="asta"/>
+					<img class="ahorcado" src="images/ahorcado/viga.svg" id="viga"/>
+					<img class="ahorcado" src="images/ahorcado/soga.svg" id="soga"/>
+					<img class="ahorcado" src="images/ahorcado/cabeza.svg" id="cabeza"/>
+					<img class="ahorcado" src="images/ahorcado/cuerpo.svg" id="cuerpo"/>
+					<img class="ahorcado" src="images/ahorcado/piernad.svg" id="piernad"/>
+					<img class="ahorcado" src="images/ahorcado/piernai.svg" id="piernai"/>
+					<img class="ahorcado" src="images/ahorcado/brazod.svg" id="brazod"/>
+					<img class="ahorcado" src="images/ahorcado/brazoi.svg" id="brazoi"/>
+				</div>
+				<div class="win"></div>
+				<div class="lose"></div>			
+				<div class="rightWord">
+				</div>
+				<div class="wrongWord">
+				</div>
+				<textarea id="letraVirtual" type="text"> </textarea>
+				<div id="pausa">
+					<div id="juegopausa">JUEGO EN PAUSA</div>
+					<div id="continuar">Click aquí para reanudar</div>
+				</div>
+				<div class="botoneraGame">
+					<button class="leftButton" id="newGameButton"> Nuevo juego </button>
+					<button class="rightButton" id="returnButton"> Volver </button>
+				</div>			
+			</section>
+        </main>
+		<footer>
+			<p id="desarrollo">Desarrollado por Exequiel Andres</p>
+			
+		</footer>
+		<script src="script.js"></script>
+    </body>    

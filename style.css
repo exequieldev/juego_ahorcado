@@ -1,0 +1,572 @@
+body {
+	font-family: inter;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: #F3F5FC;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+
+h1 {
+	font-size:5em;
+	font:bold 7.5vw/1.6 'Signika', sans-serif;
+	user-select:none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+   }
+   
+   h1 span { display:inline-block; animation:float .2s ease-in-out infinite; }
+	@keyframes float {
+	 0%,100%{ transform:none; }
+	 33%{ transform:translateY(-1px) rotate(-2deg); }
+	 66%{ transform:translateY(1px) rotate(2deg); }
+   }
+   
+   span:nth-child(4n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
+   span:nth-child(4n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
+   span:nth-child(4n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
+   span:nth-child(4n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); }
+   
+   h1 span:nth-child(2){ animation-delay:.05s; }
+   h1 span:nth-child(3){ animation-delay:.1s; }
+   h1 span:nth-child(4){ animation-delay:.15s; }
+   h1 span:nth-child(5){ animation-delay:.2s; }
+   h1 span:nth-child(6){ animation-delay:.25s; }
+   h1 span:nth-child(7){ animation-delay:.3s; }
+   h1 span:nth-child(8){ animation-delay:.35s; }
+   h1 span:nth-child(9){ animation-delay:.4s; }
+   h1 span:nth-child(10){ animation-delay:.45s; }
+   h1 span:nth-child(11){ animation-delay:.5s; }
+   h1 span:nth-child(12){ animation-delay:.55s; }
+   h1 span:nth-child(13){ animation-delay:.6s; }
+   h1 span:nth-child(14){ animation-delay:.65s; }
+
+header{
+	width: 50%;
+	margin: 0 0 0 0;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+ #dibujo{
+    width: 115px;
+    margin: 34px auto 0;
+	animation:float .2s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+    display: none;
+} 
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(228, 228, 228, 1.0);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#hlogo {
+	margin: 40px 0 0 40px;
+	width: 120px;
+	height: 48px;
+ }
+
+ .title{
+	display: flex;
+	flex-direction: column;
+	margin: 6rem auto 0;
+}
+
+Button{
+	position: relative;
+	width: 228px;
+	height: 67px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	border: 1px solid #0a3871;
+	overflow: hidden;
+	font-size: .9em;
+	text-align: center;
+}
+
+#startButton {
+	
+	background:rgba(10,56,113,1);
+	color:#FFFFFF;
+	margin: 0 auto 3%;
+	width: 317px;
+	height: 114px;
+}
+	#startButton:active{
+	    background:#1780aa;
+	}
+
+#addWordButton {
+    background:rgba(216,223,232,1);
+    color:#0A3871;
+	width: 280px;
+	height: 67px;
+	margin: 0 auto;
+}
+	
+	#addWordButton:active{
+	    background:#9cb6c1;
+	}
+
+	.addWord{
+		display: none;
+		flex-direction: column;
+		max-width: 1181px;
+	}
+	
+
+.newWord {
+	position: relative;
+	margin: 3% 0% 14% 25%;
+	overflow: hidden;
+	font-family: inter;
+	font-size: 1.5em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: 1.12em;
+	color:#0A3871;
+	background:#F3F5FC;
+	resize: none;
+	outline: none;
+	border: 0;
+}
+			
+	::placeholder {	
+		text-transform: initial;
+		font-family: inter;
+		font-size: 1.5rem;
+		font-weight: bolder;
+		text-align: left;
+		/* line-height: 5em; */
+		color:#0A3871;
+	}
+
+.advertencia{
+	display: flex;
+	margin: 2% 0 0 25%;
+	align-items: center;
+}
+
+#vector{
+	width: 1rem;
+	height: 1rem;
+	margin: 10% 1% 0 0;
+}
+
+.aviso{
+	margin: 10% 0 0 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	color: #495057;
+}
+
+.botoneraAdd{
+	display: flex;
+	flex-direction: row;
+	margin: 3% 0 0 25%;
+}
+
+.leftButton {
+
+	background:rgba(10,56,113,1);
+	color:#FFFFFF;
+	margin: 0 10% 0 0;
+}
+	.leftButton:active{
+		background:#1780aa;
+	}
+	
+.rightButton {
+	background:rgba(216,223,232,1);
+	color:#0A3871;
+}
+	
+	.rightButton:active{
+		background:#9cb6c1;
+	}
+
+.game{
+	display: none;
+	flex-direction: column;
+	}
+
+#newGameButton{
+	margin: 0 14% 0 25%;
+}
+
+.draw{
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	max-height: 360px;
+	min-height: 351px;
+	width: 294px;
+	margin: 0 auto;
+	visibility: hidden;
+}
+
+.word{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+    height: 10%;
+	position: relative;
+}
+
+.end{
+	position: relative;
+	bottom:50%;
+	left: 80%;
+	width: 20%;
+	height: 10%;
+}
+
+.botoneraGame{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 80%;
+    height: 10%;
+    position: relative;
+	margin: 0 auto;
+}
+
+.ahorcado{
+	position: absolute;
+	height: fit-content;
+    width: fit-content;
+}
+
+#piso{	
+	bottom: 0%;
+	left: 0%;
+	visibility: visible;
+}
+
+#asta{	
+	bottom: 0%;
+	left: 20%;
+	visibility: visible;
+}
+
+#viga{	
+    top: 0%;
+    left: 20.2%;
+	visibility: visible;
+}
+
+#soga{
+    top: 0%;
+    left: 79%;
+}
+
+#cabeza{
+    top: 13%;
+	left: 68.54%;
+}
+
+#cuerpo{
+    top: 30%;
+	left: 79%;
+}
+
+#piernad{
+	bottom: 14%;
+    left: 67.4%;
+}
+
+#piernai{
+	bottom: 14%;
+    left: 79.6%;
+}
+
+#brazod{
+	top: 30.8%;
+    left: 67.4%;
+}
+
+#brazoi{
+	top: 30.8%;
+    left: 79.6%;
+}
+
+.rightWord{
+	display: inline-flex;
+    position: relative;
+    left: 0px;
+    width: 81%;
+    margin: 1% auto;
+	justify-content: center;
+	font-size: 1.2em;
+	color: red;
+}
+.rightLetter{
+	display: inline-block;
+    width: 38px;
+    height: 48px;
+    border-bottom: 3px solid #0a3871;
+    margin: 0 1%;
+    text-align: center;
+	font-size: 3rem;
+	color: black;
+}
+
+.letter{
+	font-size: 3em;
+}
+
+#letraVirtual{
+	display: none;
+}
+.wrongWord{
+	display: inline-flex;
+	margin: 1% auto;
+	justify-content: center;
+}
+.wrongLetter{
+	display: inline-block;
+
+}
+
+.win{
+	position: absolute;
+	width: 46%;
+	color: green;
+	font-weight: bold;
+	font-size: 3rem;
+	left: 42%;
+    bottom: 43%;
+	animation:bounce .6s ease-in-out infinite;
+}
+
+.lose{
+	position: absolute;
+	width: 46%;
+	color: red;
+	font-weight: bold;
+	font-size: 3rem;
+	left: 42%;
+    bottom: 43%;
+	animation:float 1.2s ease-in-out infinite;
+}
+
+#pausa {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	width: 178px;
+    left: 26%;
+    top: 34%;
+	text-align: center;
+}
+
+#juegopausa{
+	color: red;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#continuar{
+	font-size: 1.2em;
+    margin-top: 10%;
+    color: red;
+}
+
+footer{
+	text-align:left;
+}
+#desarrollo{
+	margin: 2% 0 0;
+	color: #0A3871;
+	font-size: 0.9rem;
+}
+#linkedin{
+	height: 20px;
+}
+a{
+	color: rgba(243,245,252,1);
+}
+#github{
+	height: 20px;
+}
+
+
+@media (max-width: 700px) {
+	
+	#hlogo {
+		margin: 18px 0 40px -6px;
+	}
+
+	.botoneraGame{
+		display: block;
+		left: 0px;
+    	width: 228px;
+		margin: 43% auto;
+	}
+	.word{
+		left: -13px;
+    	width: auto;
+    	height: auto;
+		position: relative;
+	}
+	.leftButton{
+		margin: 0;
+	}
+	.leftButton:active{
+		background:#44c4f7;
+		-ms-box-shadow:1px 1px 10px 1px #1a89b5;
+		-o-box-shadow:1px 1px 10px 1px #1a89b5;
+		-webkit-box-shadow:1px 1px 10px 1px #1a89b5;
+		-moz-box-shadow:1px 1px 10px 1px #1a89b5;
+		box-shadow:1px 1px 30px 5px #1a89b5;
+	}
+	#newGameButton {
+		margin: 0
+	}
+	.rightButton{
+		margin: 0
+	}
+	.rightButton:active{
+		background:#cad7dc;
+		-ms-box-shadow:10px 10px 10px 1px #d8f2fd;
+		-o-box-shadow:10px 10px 10px 1px #d8f2fd;
+		-webkit-box-shadow:10px 10px 10px 1px #d8f2fd;
+		-moz-box-shadow:10px 10px 10px 1px #d8f2fd;
+		box-shadow:1px 1px 30px 5px #1a5268;
+	}
+	.rightWord{
+		display: inline-flex;
+    	margin: 0 auto;
+		justify-content: center;
+		top: -48px
+	}
+	.wrongWord {
+		margin: 3% auto;
+		top: -56px;
+		position: relative;
+	}
+	.rightLetter {
+		display: inline-block;
+		height: 48px;
+		border-bottom: 3px solid #0a3871;
+		margin: 0 1%;
+		text-align: center;
+	}
+	.win{
+		left: 30%;
+    	top: 46%;
+	}
+	.lose{
+		left: 30%;
+    	top: 46%;
+	}
+	.botoneraAdd {
+		display: flex;
+		flex-direction: column;
+		margin: 3% 0 0 0%;
+	}
+	.newWord {
+		margin: 21% 0% 15% 25%;
+	}
+	.advertencia {
+		margin: 35% 0 0 34%;
+	}
+	#letraVirtual {
+		display: block;
+		text-align: justify;
+		width: 100%;
+    	height: 325px;
+		background: transparent;
+		margin: 0 auto 3%;
+		resize: none;
+		position: absolute;
+    	top: 71px;
+    	border: 0px;
+		z-index: 2;
+		color: transparent;
+	}
+	#letraVirtual::placeholder {
+			font-size: 1rem; 
+			text-align: center;
+		}
+	#letraVirtual:focus {
+		outline: none;
+	}
+	#letraVirtual:focus::placeholder {
+		color: transparent;
+	}
+	.ahorcado{
+		transform: scale(0.3);
+	}
+	#piso{	
+		bottom: 0%;
+		left: 0%;
+		visibility: visible;
+	}
+	#asta{	
+		top: -56%;
+    	left: 41%;
+	}
+	#viga{	
+		top: 26%;
+   		left: 20.2%;
+	}
+	#soga{
+		top: 16%;
+		left: 59%;
+	}	
+	#cabeza{
+		top: 22%;
+		left: 49%;
+	}	
+	#cuerpo{
+		top: 17%;
+		left: 59%;
+	}	
+	#piernad{
+		top: 59%;
+		left: 51.8%;
+	}	
+	#piernai{
+		top: 59%;
+		left: 55.4%;
+	}	
+	#brazod{
+		top: 33.8%;
+		left: 51.4%;
+	}	
+	#brazoi{
+		top: 33.8%;
+    	left: 55.6%;
+	}
+	.draw{
+		top: -60px;
+		min-height: 151px;
+	}	
+}
